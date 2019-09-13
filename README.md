@@ -4,9 +4,8 @@ languages:
 - java
 products:
 - azure
-extensions:
-- services: Compute
-- platforms: java
+description: "Create a virtual machine with Managed Service Identity enabled with access to resource group"
+urlFragment: aad-java-manage-resources-from-vm-with-msi
 ---
 
 # Getting Started with Compute - Manage Storage From MSI Enabled Virtual Machine - in Java #
