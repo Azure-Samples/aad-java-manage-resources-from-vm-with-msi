@@ -4,39 +4,37 @@ languages:
 - java
 products:
 - azure
-description: "Create a virtual machine with Managed Service Identity enabled with access to resource group"
+- azure-virtual-machines
+description: "Azure Compute sample for managing virtual machines."
 urlFragment: aad-java-manage-resources-from-vm-with-msi
 ---
 
-# Getting Started with Compute - Manage Storage From MSI Enabled Virtual Machine - in Java #
+# Manage storage from MSI-enabled Azure Virtual Machine (Java)
 
+Azure Compute sample for managing virtual machines.
 
-  Azure Compute sample for managing virtual machines -
-    - Create a virtual machine with Managed Service Identity enabled with access to resource group
-    - Set custom script in the virtual machine that
-           - install az cli in the virtual machine
-           - uses az cli MSI credentials to create a storage account
-    - Get storage account created through MSI credentials.
+- Create a virtual machine with Managed Service Identity enabled with access to resource group
+- Set custom script in the virtual machine that
+       - install az cli in the virtual machine
+       - uses az cli MSI credentials to create a storage account
+- Get storage account created through MSI credentials.
  
-
-## Running this Sample ##
+## Running this sample
 
 To run this sample:
 
 Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an auth file. See [how to create an auth file](https://github.com/Azure/azure-libraries-for-java/blob/master/AUTH.md).
 
-    git clone https://github.com/Azure-Samples/aad-java-manage-resources-from-vm-with-msi.git
+```bash
+git clone https://github.com/Azure-Samples/aad-java-manage-resources-from-vm-with-msi.git
+cd aad-java-manage-resources-from-vm-with-msi
+mvn clean compile exec:java
+```
 
-    cd aad-java-manage-resources-from-vm-with-msi
-
-    mvn clean compile exec:java
-
-## More information ##
+## More information
 
 [http://azure.com/java](http://azure.com/java)
 
-If you don't have a Microsoft Azure subscription you can get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212)
-
----
+If you don't have a Microsoft Azure subscription you can get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212).
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
