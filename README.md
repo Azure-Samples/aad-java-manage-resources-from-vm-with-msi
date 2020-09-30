@@ -5,8 +5,8 @@ languages:
 products:
 - azure
 extensions:
-- services: Compute
-- platforms: java
+  services: Compute
+  platforms: java
 ---
 
 # Getting Started with Compute - Manage Storage From MSI Enabled Virtual Machine - in Java #
